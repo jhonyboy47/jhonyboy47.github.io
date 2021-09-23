@@ -1,0 +1,13 @@
+#welcome{
+  text-align: left;
+  border-style: solid;
+  border-width: thin;
+  border-color: white;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  background-color: #333;
+  color: white;
+
+}

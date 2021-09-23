@@ -1,0 +1,40 @@
+/*Make sure the first letter is larger than others*/
+.big-letter{
+  font-size: 50px;
+  color: darkblue;
+}
+.outer{
+background-color: lightblue;
+/*all outer boxes a total size of 200x200 pixels*/
+height: 200px; width: 200px;
+}
+
+/*Give all boxes a dashed, 3px border.*/
+div{
+  border-style: dashed;
+  border-width: 3px;
+}
+
+div.outer > div{
+  /*inner boxes a total size of 100x100 pixels*/
+  height: 100px; width: 100px;
+  /*inner boxes white*/
+  background-color: white;
+}
+
+.inner1{
+  float: right;
+  margin: 10px;
+  padding: 20px;
+}
+
+.inner2{
+  float: left;
+  margin: 10px;
+  padding: 10px;
+}
+
+.inner3{
+  float: right;
+  margin-top: 40px; margin-right: 0px;
+}

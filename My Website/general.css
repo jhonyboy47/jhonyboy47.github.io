@@ -1,0 +1,13 @@
+body {
+  background-image: url("images/unsplash.jpg");
+  background-size: contain;
+  text-align: center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+
+p {
+  font-size: 17px;
+  font-weight: normal;
+}

@@ -1,0 +1,68 @@
+
+/*At least two elements with specified fonts*/
+p, li {
+  font-family:"Comic Sans MS", cursive, sans-serif;
+}
+
+li {
+
+  margin-left: 40%;
+  margin-right: 40%;
+
+}
+/*Style one or more aspects of an element with an id selector*/
+#Jesus:hover{
+  color:red;
+}
+
+
+#pycode{
+  text-align: left;
+  margin-left: 40%;
+}
+
+/*Style one or more aspects of an element with a class selector*/
+.even {
+    background-color: white;
+
+}
+/*Style one or more aspects of an element with an id selector*/
+#links p{
+  font-family: arial,sans-serif;
+}
+
+blockquote{
+  font-family: arial,sans-serif;
+
+}
+/*Style the image(s) as you see fit*/
+img {
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Style each of the following pseudo-classes differently
+link
+visited
+hover
+active*/
+/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: lightgreen;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+}
+
+/* selected link */
+a:active {
+  color: red;
+}

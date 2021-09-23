@@ -1,0 +1,58 @@
+/*Solid border around table and between cells*/
+table, th, td{
+  border: 3px solid blue;
+  text-align: center;
+
+  /* Tables should be centered, with a top margin to provide space between tables. */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+table {
+  width:100%
+}
+/*Background color for the header with a complementary font color*/
+th {
+  background-color: yellow;
+  color: blue;
+}
+
+
+#table2 tbody{
+  background-color: lightgray;
+
+}
+
+/*Dashed bottom border for some td element (do not overlap other borders)*/
+ #table3 td{
+    border-bottom: 2px dashed white;
+}
+
+/*Header and footer of a single table are different colors (background & text)*/
+#table2 tfoot{
+  background-color: blue;
+}
+
+/*Special styling for either first or last element  (hint: use last-of-type or first-of-type pseudo-class).*/
+tr:last-of-type{
+
+  color:yellow;
+}
+
+
+/*Use reasonable formatting for the captions.  They should stand out from the rest of the headers and tables on the page.*/
+caption{
+  text-decoration: underline;
+  text-shadow: 2px 2px blue;
+  font-size: 30px
+
+}
+
+/*Background color for alternating rows (hint: nth-of-type pseudo-class)*/
+tr:nth-of-type(2){
+  background-color: gray;
+}
+tr:nth-of-type(4){
+  background-color: gray;
+}

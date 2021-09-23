@@ -1,0 +1,77 @@
+
+
+#sidebar{
+  /*The sidebar should have a fixed position (i.e. when you scroll the browser it should stay in place)*/
+  position: fixed;
+  top:0;
+
+  /*Different colors*/
+  background-color: yellow;
+
+}
+
+/*The header should be placed relative to the sidebar so it is not obscured.*/
+h1{
+  position: relative;
+  top: 0;
+  left: 150px;
+}
+
+/*The "shy" text should be hidden behind the sidebar.*/
+body p:first-of-type{
+  position: static;
+  z-index: -1;
+
+}
+
+/*The "important" text should have an absolute position so that it appears toward the top right of the screen. It should have a scrollbar.*/
+div.important{
+  /*Different colors*/
+  background-color: pink;
+
+  position: absolute;
+  /*Scroll bar*/
+  overflow: scroll;
+
+  /*Dimensions*/
+  width: 200px;  height: 80px;
+
+  /*Placed at top right*/
+  right: 0px;
+  top: 100px;
+
+
+
+}
+
+/*The "not-important" text should not display the overflow.*/
+div.not-important{
+  /*Different colors*/
+  background-color: blue;
+
+  /*not displaying overflow*/
+  overflow: hidden;
+
+  position: absolute;
+  top: 15%;
+  left: 10%;
+
+  /*Dimensions*/
+  height: 100px; width: 50px;
+
+}
+
+/*The "more-important" text should display the overflow. BUT, it should set z-index so that it appears behind the "not-important" text. Use relative position so that the "more-important" and "not-important" divs overlap somewhat.*/
+div.more-important{
+  /*Different colors*/
+  background-color: purple;
+
+  width: 90px;  height: 150px;
+
+  overflow: visible;
+  /*Use relative position so that the "more-important" and "not-important" divs overlap somewhat.*/
+  position:relative;
+  top: 20%;
+  left: 100px;
+  z-index: -1;
+}

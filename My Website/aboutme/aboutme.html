@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+
+<title> Jhonathan Malagon!</title>
+
+<meta charset="utf-8">
+<meta name="author" content="Jhonathan Malagon">
+<link rel="stylesheet" type="text/css" href="tables.css" />
+<link rel="stylesheet" type="text/css" href="aboutme.css"/>
+<link rel="stylesheet" type="text/css" href="../nav.css" />
+<link rel="stylesheet" type="text/css" href="../general.css" />
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="../index.html" >Home</a>
+    <a href="aboutme.html" class="active">About Me</a>
+
+    <div class="dropdown">
+      <button class="dropbtn">CSS Tutorials
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="../csstutorials/turtlecoders.html">Turtle Coders</a>
+        <a href="../csstutorials/posEX.html">Position Example</a>
+        <a href="../csstutorials/clearEx.html">Float and Clear</a>
+      </div>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+   </div>
+
+
+<!-- Section 1 -->
+<header id="aboutMe">
+<h1> Jhonathan's Website</h1>
+
+
+<p> My name is Jhonathan Malagon <br>
+    I like to play soccer and many things in life <br>
+    My aspiration is to follow Jesus <br>
+    ...wanna see some <a href="#SomeCode" >code</a>? </p>
+
+	<p> Here is a quote from a random website: </p>
+	<blockquote cite="https://random-ize.com/random-website/">
+"Bored with the web? Think you've seen it all? Surf the web a new way with this random website generator. Bounce around thousands of crazy, pointless, funny, intereractive, informative and interesting webistes made by the most odd people online. And that says something."
+</blockquote>
+
+</header>
+<hr>
+
+<!--Style the HTML code (put it in a div, if not already done) -->
+<section class="even">
+<h2> My Priorities in life </h2>
+
+<ol>
+
+   <li id="Jesus"> <em> Jesus </em> </li>
+   <li> Family 	&reg;</li>
+   <li> Friends &darr;</li>
+
+</ol>
+
+<img src="images/friends.PNG" alt="Picture of my friends" width="500">
+<img src="images/friends2.PNG" alt="Picture of my friends" width="500">
+</Section>
+
+<hr>
+
+<section class="odd">
+<h2> Some Tables </h2>
+
+<!-- Table 1-->
+<table>
+
+  <!-- Caption used -->
+  <caption>College</caption>
+  <tr>
+    <th>Year</th>
+    <th>Favorite Class</th>
+  </tr>
+  <tr>
+    <td>2019</td>
+    <td>CSCI 261</td>
+  </tr>
+  <tr>
+    <td>2020</td>
+    <td>CSCI 262</td>
+  </tr>
+</table>
+
+<!-- Table 2 Use caption, thead, tbody and tfoot -->
+<table id="table2">
+  <caption>Home</caption>
+
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Air Condition Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>June</td>
+      <td>$120</td>
+    </tr>
+    <tr>
+      <td>July</td>
+      <td>$80</td>
+    </tr>
+    <tr>
+      <td>August</td>
+      <td>$120</td>
+    </tr>
+    <tr>
+      <td>September</td>
+      <td>$80</td>
+    </tr>
+
+  </tbody>
+  <tfoot>
+    <tr>
+      <!--colspan used in table-->
+      <td colspan="2">Total Cost: $400</td>
+    </tr>
+  </tfoot>
+</table>
+
+<table id="table3">
+
+  <caption>Random</caption>
+
+  <tr>
+    <th> Header </th>
+
+    <!--rowspan used in table-->
+    <th rowspan="3"> Header 2 </th>
+    <th> Header </th>
+  </tr>
+
+  <tr>
+      <td> row1 col1 <td>
+  </tr>
+
+  <tr>
+      <td> row2 col1 <td>
+
+  </tr>
+</table>
+
+</section>
+<hr>
+
+<section class="even" style="text-align:left" >
+<h2 id="SomeCode"> Some Code</h2>
+
+
+<pre>
+<code>
+
+
+a = "have "
+b = "a "
+c = "nice day!"
+
+print( a + b + c )
+</code>
+</pre>
+
+
+<samp>
+output: have a nice day!
+</samp>
+
+</section>
+
+
+<hr>
+
+<footer id="links">
+<p> Want some
+<a href="https://www.youtube.com/watch?v=rA56B4JyTgI" target="_blank">  Lo-Fi beats</a>
+ to listen to featuring Will Smith??
+
+</p>
+
+<p> Send me an
+<a href="mailto:malagon@mymail.mines.edu" title="This is my school email"> email</a>
+</p>
+
+</footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>
